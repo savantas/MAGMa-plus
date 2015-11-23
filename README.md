@@ -1,2 +1,2 @@
 # MAGMa-wrapper
-allows MAGMa with dynamic parameter selection
+allows MAGMa metabolite identification with dynamic parameter selection
