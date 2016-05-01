@@ -58,3 +58,7 @@ RUNNING MAGMa+
 	python MAGMa_plus.py annotate -c 0 -d 0 -b 3 -w 1 -s hmdb output.db
 	python MAGMa_plus.py export_result output.db
 ```
+
+CITING MAGMa+
+-------------
+Please cite the paper: http://link.springer.com/article/10.1007%2Fs11306-016-1036-3
