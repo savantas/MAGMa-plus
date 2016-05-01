@@ -1,10 +1,13 @@
-# MAGMa+
-* allows MAGMa metabolite identification with dynamic parameter selection
+MAGMa+
+======
+
+* MAGMa+ allows MAGMa metabolite identification with dynamic parameter selection.
 * Disclaimer: The installation of MAGMa/MAGMa+ was only tested on a linux machine.
 * Prerequisites: A working version of Python2.7 is required
 * Remark: The MAGMa version provided here was originally written by: Lars Ridder
 
-# INSTALLATION OF MAGMa+
+INSTALLATION OF MAGMa+
+----------------------
 
 * Make sure you have all MAGMa dependencies installed
  * the most important dependency is RDKit (http://www.rdkit.org/) with INCHI support.
@@ -13,7 +16,8 @@
 * Copy all the MAGMa/MAGMa+ source files and accompanying files to a dedicated directory.
 
 
-# RUNNING MAGMa+
+RUNNING MAGMa+
+--------------
 
 * Setting up the shell environment: `MAGMAPLUS_CLASSIFIER_PATH`
 
