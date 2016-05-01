@@ -6,7 +6,7 @@ MAGMa+
 * Prerequisites: A working version of Python2.7 is required
 * Remark: The MAGMa version provided here was originally written by: Lars Ridder
 
-INSTALLATION OF MAGMa+
+Installation of MAGMa+
 ----------------------
 
 * Make sure you have all MAGMa dependencies installed
@@ -16,7 +16,7 @@ INSTALLATION OF MAGMa+
 * Copy all the MAGMa/MAGMa+ source files and accompanying files to a dedicated directory.
 
 
-RUNNING MAGMa+
+Running MAGMa+
 --------------
 
 * Setting up the shell environment: `MAGMAPLUS_CLASSIFIER_PATH`
@@ -59,6 +59,6 @@ RUNNING MAGMa+
 	python MAGMa_plus.py export_result output.db
 ```
 
-CITING MAGMa+
+Citing MAGMa+
 -------------
 Please cite the paper: http://link.springer.com/article/10.1007%2Fs11306-016-1036-3
