@@ -25,6 +25,8 @@ Running MAGMa+
 	the `MAGMAPLUS_CLASSIFIER_PATH` variable should be set to that different directory.
 	It should contain: `AllFingerprints.txt`, `metabolite_posD_rfc.pkl` and `metabolite_negC_rfc.pkl`
 
+* Unzip the classifier pickle files (`metabolite_posD_rfc.pkl.zip` and `metabolite_negC_rfc.pkl.zip`).
+
 * Creating a configuration file
 
   A `magma_job.ini` config file is read from working directory.
@@ -32,7 +34,7 @@ Running MAGMa+
   Example content:
 
 ```
-  [magma job]
+	[magma job]
 	# Location of structure database to fetch candidate molecules to match against ms peak trees
 	# db is expected to be available at where job is executed
 	structure_database.hmdb = /path/to/HMDB_MAGMa.db
