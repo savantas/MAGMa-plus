@@ -8,14 +8,14 @@
 '''
 MAGMa+ allows for MAGMa metabolite identifications with dynamic parameter selection.
 
-Copyright (C) 2015 Dries Verdegem and VIB - KU Leuven (BSD-3)
+Copyright (C) 2016 Dries Verdegem and VIB - KU Leuven (BSD-3)
 
-December 2015: Original open-source release
+April 2016: Original open-source release
 '''
 
 __version__ = '1.0.0'
 __author__ = "Dries verdegem"
-__copyright__ = "Copyright 2015, VIB-KU Leuven (http://www.vib.be/en, http://www.kuleuven.be/english), Dries Verdegem"
+__copyright__ = "Copyright 2016, VIB-KU Leuven (http://www.vib.be/en, http://www.kuleuven.be/english), Dries Verdegem"
 __credits__ = ["Dries Verdegem", "Diether Lambrechts", "Peter Carmeliet", "Bart Ghesquière"]
 __license__ = "BSD-3"
 __maintainer__ = "Dries Verdegem"
