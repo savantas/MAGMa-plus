@@ -119,7 +119,6 @@ def process_hmdb(args):
                 print 'complex:', hmdb_id, smiles
                 continue
 
-            #molblock = base64.encodestring(zlib.compress(''.join(record)))
             molform = Chem.rdMolDescriptors.CalcMolFormula(mol)
             mim = Chem.rdMolDescriptors.CalcExactMolWt(mol)
             charge = 0
