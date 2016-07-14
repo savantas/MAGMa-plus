@@ -63,4 +63,6 @@ Running MAGMa+
 
 Citing MAGMa+
 -------------
-Please cite the paper: http://link.springer.com/article/10.1007%2Fs11306-016-1036-3
+Please cite the papers:
+- http://link.springer.com/article/10.1007%2Fs11306-016-1036-3
+- http://onlinelibrary.wiley.com/doi/10.1002/rcm.6364/full
