@@ -240,7 +240,7 @@ def parse_export_structures(structures_txt):
     structure_db = sqlite3.connect(structure_db_fn)
     cursor = structure_db.cursor()
     # defining the metabolite id regular expression
-    metabolite_id_regex = re.compile(r'\((.+)\)\s+[^\s]+$')
+    #metabolite_id_regex = re.compile(r'\((.+)\)\s+[^\s]+$')
     # filtering the input
     try:
         structures_txt = structures_txt.split('Candidate_Score Name Smiles\n')[1]
@@ -248,7 +248,8 @@ def parse_export_structures(structures_txt):
         return []
     structures_temp = []
     for structure_info in structures_txt.split('\n'):
-        metabolite_id = metabolite_id_regex.findall(structure_info)[0]
+        #metabolite_id = metabolite_id_regex.findall(structure_info)[0]
+        metabolite_id = structure_info.split(' ')[-2][1:-1]
         # get item from database
         cursor.execute('''SELECT name, molblock FROM molecules WHERE id=?''', (metabolite_id,))
         try:
