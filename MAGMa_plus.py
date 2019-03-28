@@ -28,6 +28,7 @@ import re
 import pickle
 import zlib
 import sqlite3
+import numpy
 from cStringIO import StringIO
 
 
@@ -214,12 +215,12 @@ def get_molclass(structuresA, structuresx, ionization_mode, classifier_dir):
     molsA = get_top_ranked(structuresA)
     molsx = get_top_ranked(structuresx)
     
-    featuresA = [[int(k) for k in list(Allkeys._pyGenFilteredMACCSKeys(mol, feature_list).ToBitString())] for mol in molsA]
-    featuresx = [[int(k) for k in list(Allkeys._pyGenFilteredMACCSKeys(mol, feature_list).ToBitString())] for mol in molsx]
+    featuresA = [numpy.array([int(k) for k in list(Allkeys._pyGenFilteredMACCSKeys(mol, feature_list).ToBitString())]) for mol in molsA]
+    featuresx = [numpy.array([int(k) for k in list(Allkeys._pyGenFilteredMACCSKeys(mol, feature_list).ToBitString())]) for mol in molsx]
     
-    membershipA = [clf.predict(features)[0] for features in featuresA]
-    membershipx = [clf.predict(features)[0] for features in featuresx]
-    
+    membershipA = [clf.predict(features.reshape(1, -1))[0] for features in featuresA]
+    membershipx = [clf.predict(features.reshape(1, -1))[0] for features in featuresx]
+
     print 'membershipA', membershipA
     print 'membershipx', membershipx
     
