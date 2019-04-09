@@ -11,7 +11,7 @@ Installation of MAGMa+
 
 * Make sure you have all MAGMa dependencies installed
  * the most important dependency is RDKit (http://www.rdkit.org/) with INCHI support.
- * other required python libaries are: sqlalchemy, lxml, numpy, pp, request, macauthlib, mock, nose, coverage, sklearn
+ * other required python libaries are: sqlalchemy, lxml, numpy, pp, requests, macauthlib, mock, nose, coverage, sklearn
 
 * Copy all the MAGMa/MAGMa+ source files and accompanying files to a dedicated directory.
 
